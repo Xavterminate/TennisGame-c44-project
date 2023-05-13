@@ -30,10 +30,12 @@ function draw(){
    enemy.position.y=ball.position.y
   
    if(keyDown("SPACE")&&gamestate===0) {
-    
+    if(keyDown("SPACE")){
     ball.velocity.x=Math.round(random(-7,7));
     gamestate=1;
    }
+  text("Press space to begin, press e to hit when the ball reaches you",400,250);
+  }
    if(gamestate===1){
    
    
